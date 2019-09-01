@@ -4,7 +4,7 @@
             <?php
             if ($this->session->userdata('session_level') == 'guru'):
                 ?>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSoal">Tambah Ujian
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSoal">Tambah Latihan
                 </button>
             <?php
             elseif ($this->session->userdata('session_level') == 'siswa'):
@@ -102,7 +102,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Ujian Baru</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Latihan Baru</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 </button>
             </div>

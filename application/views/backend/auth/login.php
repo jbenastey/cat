@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col col-login mx-auto">
                     <div class="text-center mb-6">
-                        <h1>Computer Assisted Test</h1>
+                        <h1>Drill and Practice</h1>
                         <?php if ($this->session->flashdata('alert') == 'failed_login'):?>
                         <div class="alert alert-danger animated fadeInDown hide-it" role="alert">
                             <button type="button" class="close" data-dismiss="alert"></button>

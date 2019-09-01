@@ -73,7 +73,7 @@
             <div class="container">
                 <div class="d-flex">
                     <a class="header-brand" href="<?= base_url() ?>">
-                        <i class="fa fa-desktop"></i> &nbsp;Computer Assisted Test
+                        <i class="fa fa-desktop"></i> &nbsp;Drill and Practice
                     </a>
                     <div class="d-flex order-lg-2 ml-auto">
                         <div class="dropdown">
@@ -112,7 +112,7 @@
                             if ($this->session->userdata('session_level') == 'guru'):
                                 ?>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('ujian') ?>" class="nav-link"><i class="fe fe-book"></i> Ujian</a>
+                                    <a href="<?= base_url('ujian') ?>" class="nav-link"><i class="fe fe-book"></i> Latihan</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="<?= base_url('hasil') ?>" class="nav-link"><i class="fe fe-check-square"></i> Hasil</a>
@@ -121,7 +121,7 @@
                             elseif ($this->session->userdata('session_level') == 'siswa'):
                                 ?>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('ujian') ?>" class="nav-link"><i class="fe fe-book"></i> Ujian</a>
+                                    <a href="<?= base_url('ujian') ?>" class="nav-link"><i class="fe fe-book"></i> Latihan</a>
                                 </li>
                             <?php
                             endif;

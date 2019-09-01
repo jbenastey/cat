@@ -5,7 +5,7 @@
             if ($this->session->userdata('session_level') == 'guru'):
             ?>
             <a href="<?= base_url('ujian/edit/' . $ujian['ujian_id']) ?>" class="btn btn-primary btn-sm"
-               style="float:right;"><i class="fe fe-edit-3"></i> Edit Ujian</a>
+               style="float:right;"><i class="fe fe-edit-3"></i> Edit Latihan</a>
             <?php
             endif;
             ?>

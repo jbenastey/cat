@@ -15,8 +15,8 @@ class UjianController extends GLOBAL_Controller{
         }
     }
     public function index(){
-        $data['title'] = 'Data Ujian';
-        $data['page_title'] = 'Data Ujian';
+        $data['title'] = 'Data Latihan';
+        $data['page_title'] = 'Data Latihan';
         $data['menu'] = '';
         $data['ujian'] = $this->Ujian->get_ujian();
         $data['ujianSiswa'] = $this->Ujian->get_ujian_siswa($this->userID);
@@ -45,8 +45,8 @@ class UjianController extends GLOBAL_Controller{
     }
     public function view($id){
         $idSiswa = $this->userID;
-        $data['title'] = 'Data Ujian';
-        $data['page_title'] = 'Data Ujian';
+        $data['title'] = 'Data Latihan';
+        $data['page_title'] = 'Data Latihan';
         $data['menu'] = '';
         $data['ujian'] = $this->Ujian->view_ujian($id);
         $data['soal'] = $this->Soal->get_soal_ujian($id);
@@ -54,8 +54,8 @@ class UjianController extends GLOBAL_Controller{
         parent::template('backend/ujian/view',$data);
     }
     public function edit($id){
-        $data['title'] = 'Data Ujian';
-        $data['page_title'] = 'Data Ujian';
+        $data['title'] = 'Data Latihan';
+        $data['page_title'] = 'Data Latihan';
         $data['menu'] = '';
         $data['ujian'] = $this->Ujian->view_ujian($id);
 
@@ -96,8 +96,8 @@ class UjianController extends GLOBAL_Controller{
     }
     public function mulai($id){
         $idSiswa = $this->userID;
-        $data['title'] = 'Soal Ujian';
-        $data['page_title'] = 'Soal Ujian';
+        $data['title'] = 'Soal Latihan';
+        $data['page_title'] = 'Soal Latihan';
         $data['menu'] = '';
         $data['ujian'] = $this->Ujian->view_ujian($id);
         $data['soal'] = $this->Ujian->get_soal_siswa($id, $idSiswa);
@@ -134,16 +134,16 @@ class UjianController extends GLOBAL_Controller{
         parent::template('backend/ujian/mulai',$data);
     }
     public function hasil(){
-        $data['title'] = 'Hasil Ujian';
-        $data['page_title'] = 'Hasil Ujian';
+        $data['title'] = 'Hasil Latihan';
+        $data['page_title'] = 'Hasil Latihan';
         $data['menu'] = '';
         $data['hasil'] = $this->Hasil->get_hasil();
         parent::template('backend/ujian/hasil',$data);
     }
     public function lihatHasil($id){
         $idGuru = $this->userID;
-        $data['title'] = 'Hasil Ujian';
-        $data['page_title'] = 'Hasil Ujian';
+        $data['title'] = 'Hasil Latihan';
+        $data['page_title'] = 'Hasil Latihan';
         $data['menu'] = '';
         $data['ujian'] = $this->Ujian->view_ujian($id);
         $data['soal'] = $this->Soal->get_soal_ujian($id);
